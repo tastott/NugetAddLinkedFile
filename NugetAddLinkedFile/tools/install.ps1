@@ -9,6 +9,8 @@ function AddLinkedFile(){
 
     $filename = Split-Path $filepath -Leaf
 
+    "Adding $filename as linked file"
+
     $item = $project.ProjectItems | Where-Object { $_.Name -eq $filename } | Select-Object -First 1
 
     if ($item -ne $null){
@@ -19,7 +21,13 @@ function AddLinkedFile(){
     $item.Properties.Item("CopyToOutputDirectory").Value = [int]2;
 }
 
-AddLinkedFile $project (Join-Path $toolsPath "test.exe")
+"Adding linked files from $toolsPath to $($project.Name)"
+
+Get-ChildItem $toolsPath -Exclude install.ps1,uninstall.ps1,init.ps1 |
+ForEach-Object {
+    AddLinkedFile $project $_.FullName
+}
+
 
 
 
