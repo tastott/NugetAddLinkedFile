@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetAddLinkedFile", "NugetAddLinkedFile\NugetAddLinkedFile.csproj", "{A26096F3-55DD-4DA6-A0B5-82D26555455C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetProject", "TargetProject\TargetProject.csproj", "{84F4BC50-1D66-4E7F-9EC9-674DA398B91F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A26096F3-55DD-4DA6-A0B5-82D26555455C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26096F3-55DD-4DA6-A0B5-82D26555455C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26096F3-55DD-4DA6-A0B5-82D26555455C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F4BC50-1D66-4E7F-9EC9-674DA398B91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F4BC50-1D66-4E7F-9EC9-674DA398B91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F4BC50-1D66-4E7F-9EC9-674DA398B91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F4BC50-1D66-4E7F-9EC9-674DA398B91F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
