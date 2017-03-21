@@ -1,0 +1,1 @@
+& ..\packages\NuGet.CommandLine.3.5.0\tools\nuget.exe pack .\NugetAddLinkedFile.csproj -Build -Properties "Configuration=Release;Platform=AnyCPU"
